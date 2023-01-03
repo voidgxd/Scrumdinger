@@ -16,6 +16,8 @@
 		ABF4E4A42964656100FAD7FD /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF4E4A32964656100FAD7FD /* CardView.swift */; };
 		ABF4E4A6296469C700FAD7FD /* LabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF4E4A5296469C700FAD7FD /* LabelStyle.swift */; };
 		ABF4E4A82964706F00FAD7FD /* ScrumsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF4E4A72964706F00FAD7FD /* ScrumsView.swift */; };
+		ABF4E4AA2964785B00FAD7FD /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF4E4A92964785B00FAD7FD /* DetailView.swift */; };
+		ABF4E4AC296483EE00FAD7FD /* DetailEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF4E4AB296483EE00FAD7FD /* DetailEditView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		ABF4E4A32964656100FAD7FD /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		ABF4E4A5296469C700FAD7FD /* LabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelStyle.swift; sourceTree = "<group>"; };
 		ABF4E4A72964706F00FAD7FD /* ScrumsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumsView.swift; sourceTree = "<group>"; };
+		ABF4E4A92964785B00FAD7FD /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		ABF4E4AB296483EE00FAD7FD /* DetailEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEditView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,7 @@
 				ABF4E49229645A0E00FAD7FD /* MeetingView.swift */,
 				ABF4E4A32964656100FAD7FD /* CardView.swift */,
 				ABF4E4A72964706F00FAD7FD /* ScrumsView.swift */,
+				ABF4E4A92964785B00FAD7FD /* DetailView.swift */,
 				ABF4E49029645A0E00FAD7FD /* ScrumdingerApp.swift */,
 				ABF4E49429645A0F00FAD7FD /* Assets.xcassets */,
 				ABF4E49629645A0F00FAD7FD /* Preview Content */,
@@ -86,6 +91,7 @@
 			children = (
 				ABF4E49F2964628300FAD7FD /* Theme.swift */,
 				ABF4E4A12964648100FAD7FD /* DailyScrum.swift */,
+				ABF4E4AB296483EE00FAD7FD /* DetailEditView.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -161,6 +167,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABF4E4A22964648100FAD7FD /* DailyScrum.swift in Sources */,
+				ABF4E4AA2964785B00FAD7FD /* DetailView.swift in Sources */,
+				ABF4E4AC296483EE00FAD7FD /* DetailEditView.swift in Sources */,
 				ABF4E4A02964628300FAD7FD /* Theme.swift in Sources */,
 				ABF4E4A82964706F00FAD7FD /* ScrumsView.swift in Sources */,
 				ABF4E49329645A0E00FAD7FD /* MeetingView.swift in Sources */,
