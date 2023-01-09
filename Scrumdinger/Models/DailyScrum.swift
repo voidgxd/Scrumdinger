@@ -1,5 +1,5 @@
 //
-//  DailyScrum.swift
+//  ThemePicker.swift
 //  Scrumdinger
 //
 //  Created by Максим Мосалёв on 03.01.2023.
@@ -18,7 +18,7 @@ struct DailyScrum: Identifiable, Codable {
     init(id: UUID = UUID(), title: String, attendees: [String], lengthInMinutes: Int, theme: Theme) {
         self.id = id
         self.title = title
-        self.attendees = attendees.map { Attendee(name: $0)}
+        self.attendees = attendees.map { Attendee(name: $0) }
         self.lengthInMinutes = lengthInMinutes
         self.theme = theme
     }
@@ -26,10 +26,10 @@ struct DailyScrum: Identifiable, Codable {
 
 extension DailyScrum {
     struct Attendee: Identifiable, Codable {
-        var id: UUID
+        let id: UUID
         var name: String
         
-        init(id: UUID=UUID(), name: String) {
+        init(id: UUID = UUID(), name: String) {
             self.id = id
             self.name = name
         }

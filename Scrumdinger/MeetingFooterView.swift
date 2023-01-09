@@ -12,21 +12,22 @@ struct MeetingFooterView: View {
     var skipAction: ()->Void
     
     private var speakerNumber: Int? {
-        guard let index =  speakers.firstIndex(where: { !$0.isCompleted }) else { return nil}
+        guard let index = speakers.firstIndex(where: { !$0.isCompleted }) else { return nil}
         return index + 1
     }
     private var isLastSpeaker: Bool {
-        return speakers.dropLast().allSatisfy { $0.isCompleted}
+        return speakers.dropLast().allSatisfy { $0.isCompleted }
     }
     private var speakerText: String {
-        guard let speakerNumber = speakerNumber else { return "No more speakers"}
+        guard let speakerNumber = speakerNumber else { return "No more speakers" }
         return "Speaker \(speakerNumber) of \(speakers.count)"
     }
+    
     var body: some View {
         VStack {
             HStack {
                 if isLastSpeaker {
-                    Text("Last speaker")
+                    Text("Last Speaker")
                 } else {
                     Text(speakerText)
                     Spacer()

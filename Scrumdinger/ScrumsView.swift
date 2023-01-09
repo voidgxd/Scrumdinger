@@ -14,7 +14,6 @@ struct ScrumsView: View {
     @State private var newScrumData = DailyScrum.Data()
     let saveAction: ()->Void
     
-    
     var body: some View {
         List {
             ForEach($scrums) { $scrum in
@@ -31,11 +30,10 @@ struct ScrumsView: View {
             }) {
                 Image(systemName: "plus")
             }
-            
             .accessibilityLabel("New Scrum")
         }
         .sheet(isPresented: $isPresentingNewScrumView) {
-            NavigationStack {
+            NavigationView {
                 DetailEditView(data: $newScrumData)
                     .toolbar {
                         ToolbarItem(placement: .cancellationAction) {
@@ -54,7 +52,6 @@ struct ScrumsView: View {
                         }
                     }
             }
-            
         }
         .onChange(of: scenePhase) { phase in
             if phase == .inactive { saveAction() }
@@ -62,10 +59,11 @@ struct ScrumsView: View {
     }
 }
 
-struct Scrums_Previews: PreviewProvider {
+struct ScrumsView_Previews: PreviewProvider {
     static var previews: some View {
-        NavigationStack {
+        NavigationView {
             ScrumsView(scrums: .constant(DailyScrum.sampleData), saveAction: {})
         }
     }
 }
+

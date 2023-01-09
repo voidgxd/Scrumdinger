@@ -1,5 +1,5 @@
 //
-//  ThemeView.swift
+//  ThemePicker.swift
 //  Scrumdinger
 //
 //  Created by Максим Мосалёв on 04.01.2023.

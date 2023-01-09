@@ -1,5 +1,5 @@
 //
-//  MeetingHeaderView.swift
+//  MeetingFooterView.swift
 //  Scrumdinger
 //
 //  Created by Максим Мосалёв on 04.01.2023.
@@ -15,12 +15,10 @@ struct MeetingHeaderView: View {
     private var totalSeconds: Int {
         secondsElapsed + secondsRemaining
     }
-    
     private var progress: Double {
-        guard totalSeconds > 0 else { return 1}
+        guard totalSeconds > 0 else { return 1 }
         return Double(secondsElapsed) / Double(totalSeconds)
     }
-    
     private var minutesRemaining: Int {
         secondsRemaining / 60
     }
@@ -36,8 +34,8 @@ struct MeetingHeaderView: View {
                     Label("\(secondsElapsed)", systemImage: "hourglass.bottomhalf.fill")
                 }
                 Spacer()
-                VStack(alignment: .trailing)  {
-                    Text("Seconds remaining")
+                VStack(alignment: .trailing) {
+                    Text("Seconds Remaining")
                         .font(.caption)
                     Label("\(secondsRemaining)", systemImage: "hourglass.tophalf.fill")
                         .labelStyle(.trailingIcon)
